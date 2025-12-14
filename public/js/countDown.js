@@ -29,7 +29,7 @@ const countdown = () => {
     Math.abs(nowDate.getTime() - nextYear.getTime()) < 50 && happyNewYear.innerText === ""
         ? (
             happyNewYear.innerText = "Happy New Year!",
-            setTimeout(() => { happyNewYear.innerText = "" }, 60000)
+            setTimeout(() => { happyNewYear.innerText = ""; display(); }, 60000)
         )
         : null;
 }
